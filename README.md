@@ -152,6 +152,28 @@ Exportación a Excel/PDF
 
 Indicadores KPI por sucursal
 
+### 8. 🚚 Logística y Optimización de Rutas
+```mermaid
+    graph TB
+        L[Logística] --> R[Planificación de Rutas]
+        L --> O[Optimización]
+        L --> S[Seguimiento GPS]
+        R --> M[Mapas]
+        O --> C[Restricciones]
+        S --> E[Estado de Entrega]
+```
+- **Gestión de flota**: Vehículos, conductores, mantenimiento
+
+- **Planificación inteligente**: Rutas optimizadas por distancia, tiempo y costo
+
+- **Optimización en tiempo real**: Replanificación por tráfico o imprevistos
+
+- **Seguimiento GPS**: Monitoreo de flota en tiempo real
+
+- **Notificaciones**: Alertas a clientes sobre estado de entrega
+
+- **KPIs de desempeño**: Tiempos de entrega, costos logísticos
+
 ## Requisitos Técnicos
 - Componente	Versión
 - Servidor	Ubuntu 20.04+
