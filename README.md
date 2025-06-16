@@ -50,8 +50,8 @@ Solución ERP integral para gestión empresarial con funcionalidades específica
     Compras --> Recepciones[Recepciones y devoluciones]
     Compras --> Proveedores
   
-    %% Módulo: Punto de Venta (POS)
-    ERP --> POS[Punto de Venta (POS)]
+    %% Módulo: Punto de Venta
+    ERP --> POS[Punto de Venta]
     POS --> Caja[Caja y terminal]
     POS --> Tickets[Gestión de tickets y facturas]
     POS --> Cierres[Apertura y cierre de caja]
