@@ -6,84 +6,84 @@
 Solución ERP integral para gestión empresarial con funcionalidades específicas para el mercado mexicano, incluyendo facturación digital CFDI 4.0, nómina y contabilidad electrónica.
 
 ```mermaid
-graph TD
-  ERP[ERP Central]
-
-  %% Módulo: Gestión de Usuarios y Seguridad
-  ERP --> UsuariosSeguridad[Gestión de Usuarios y Seguridad]
-  UsuariosSeguridad --> Login[Registro e Inicio de sesión]
-  UsuariosSeguridad --> Accesos[Control de accesos y perfiles]
-  UsuariosSeguridad --> Logs[Bitácora de actividades]
-  UsuariosSeguridad --> Seguridad2FA[Autenticación 2FA]
-
-  %% Módulo: Clientes y CRM
-  ERP --> CRM[Clientes y CRM]
-  CRM --> RegClientes[Registro y seguimiento de clientes]
-  CRM --> Tareas[Tareas y recordatorios]
-  CRM --> SeguimientoCRM[Historial de contacto y seguimiento]
-  CRM --> Oportunidades[Gestión de oportunidades]
-
-  %% Módulo: Productos y Servicios
-  ERP --> Productos[Productos y Servicios]
-  Productos --> Catalogo[Catálogo de productos y servicios]
-  Productos --> Clasificacion[Clasificación por categorías y atributos]
-  Productos --> Precios[Precios, descuentos y listas de precios]
-  Productos --> Servicios[Gestión de servicios]
-
-  %% Módulo: Inventario y Almacenes
-  ERP --> Inventario[Inventario y Almacenes]
-  Inventario --> Stock[Control de stock]
-  Inventario --> EntradasSalidas[Entradas y salidas]
-  Inventario --> Transferencias[Transferencias entre almacenes]
-  Inventario --> Ajustes[Ajustes e inventarios físicos]
-
-  %% Módulo: Ventas
-  ERP --> Ventas[Ventas]
-  Ventas --> Cotizaciones
-  Ventas --> OrdenesVenta[Órdenes de venta]
-  Ventas --> Devoluciones[Devoluciones y notas de crédito]
-
-  %% Módulo: Compras
-  ERP --> Compras
-  Compras --> Solicitudes[Solicitudes de compra]
-  Compras --> OrdenesCompra[Órdenes de compra]
-  Compras --> Recepciones[Recepciones y devoluciones]
-  Compras --> Proveedores
-
-  %% Módulo: Punto de Venta (POS)
-  ERP --> POS[Punto de Venta (POS)]
-  POS --> Caja[Caja y terminal]
-  POS --> Tickets[Gestión de tickets y facturas]
-  POS --> Cierres[Apertura y cierre de caja]
-
-  %% Módulo: Contabilidad y Finanzas
-  ERP --> Contabilidad
-  Contabilidad --> Cuentas[Catálogo de cuentas]
-  Contabilidad --> Diario[Diario contable]
-  Contabilidad --> CxC[Cuentas por cobrar/pagar]
-  Contabilidad --> Conciliaciones[Conciliaciones bancarias]
-
-  %% Módulo: Recursos Humanos
-  ERP --> RRHH[Recursos Humanos]
-  RRHH --> Empleados
-  RRHH --> Nomina[Nómina]
-  RRHH --> Asistencias[Asistencias y ausencias]
-  RRHH --> Evaluaciones
-  RRHH --> Contratos
-
-  %% Módulo: Reportes y Análisis
-  ERP --> Reportes
-  Reportes --> Dashboard
-  Reportes --> ReportesModulo[Reportes por módulo]
-  Reportes --> Personalizados[Reportes personalizados]
-  Reportes --> Exportacion[Exportación a Excel/PDF]
-
-  %% Módulo: Configuración del Sistema
-  ERP --> Configuracion
-  Configuracion --> Empresa[Datos de la empresa]
-  Configuracion --> Impuestos
-  Configuracion --> Plantillas[Plantillas de documentos]
-  Configuracion --> Integraciones[Integraciones externas]
+  graph TD
+    ERP[ERP Central]
+  
+    %% Módulo: Gestión de Usuarios y Seguridad
+    ERP --> UsuariosSeguridad[Gestión de Usuarios y Seguridad]
+    UsuariosSeguridad --> Login[Registro e Inicio de sesión]
+    UsuariosSeguridad --> Accesos[Control de accesos y perfiles]
+    UsuariosSeguridad --> Logs[Bitácora de actividades]
+    UsuariosSeguridad --> Seguridad2FA[Autenticación 2FA]
+  
+    %% Módulo: Clientes y CRM
+    ERP --> CRM[Clientes y CRM]
+    CRM --> RegClientes[Registro y seguimiento de clientes]
+    CRM --> Tareas[Tareas y recordatorios]
+    CRM --> SeguimientoCRM[Historial de contacto y seguimiento]
+    CRM --> Oportunidades[Gestión de oportunidades]
+  
+    %% Módulo: Productos y Servicios
+    ERP --> Productos[Productos y Servicios]
+    Productos --> Catalogo[Catálogo de productos y servicios]
+    Productos --> Clasificacion[Clasificación por categorías y atributos]
+    Productos --> Precios[Precios, descuentos y listas de precios]
+    Productos --> Servicios[Gestión de servicios]
+  
+    %% Módulo: Inventario y Almacenes
+    ERP --> Inventario[Inventario y Almacenes]
+    Inventario --> Stock[Control de stock]
+    Inventario --> EntradasSalidas[Entradas y salidas]
+    Inventario --> Transferencias[Transferencias entre almacenes]
+    Inventario --> Ajustes[Ajustes e inventarios físicos]
+  
+    %% Módulo: Ventas
+    ERP --> Ventas[Ventas]
+    Ventas --> Cotizaciones
+    Ventas --> OrdenesVenta[Órdenes de venta]
+    Ventas --> Devoluciones[Devoluciones y notas de crédito]
+  
+    %% Módulo: Compras
+    ERP --> Compras
+    Compras --> Solicitudes[Solicitudes de compra]
+    Compras --> OrdenesCompra[Órdenes de compra]
+    Compras --> Recepciones[Recepciones y devoluciones]
+    Compras --> Proveedores
+  
+    %% Módulo: Punto de Venta (POS)
+    ERP --> POS[Punto de Venta (POS)]
+    POS --> Caja[Caja y terminal]
+    POS --> Tickets[Gestión de tickets y facturas]
+    POS --> Cierres[Apertura y cierre de caja]
+  
+    %% Módulo: Contabilidad y Finanzas
+    ERP --> Contabilidad
+    Contabilidad --> Cuentas[Catálogo de cuentas]
+    Contabilidad --> Diario[Diario contable]
+    Contabilidad --> CxC[Cuentas por cobrar/pagar]
+    Contabilidad --> Conciliaciones[Conciliaciones bancarias]
+  
+    %% Módulo: Recursos Humanos
+    ERP --> RRHH[Recursos Humanos]
+    RRHH --> Empleados
+    RRHH --> Nomina[Nómina]
+    RRHH --> Asistencias[Asistencias y ausencias]
+    RRHH --> Evaluaciones
+    RRHH --> Contratos
+  
+    %% Módulo: Reportes y Análisis
+    ERP --> Reportes
+    Reportes --> Dashboard
+    Reportes --> ReportesModulo[Reportes por módulo]
+    Reportes --> Personalizados[Reportes personalizados]
+    Reportes --> Exportacion[Exportación a Excel/PDF]
+  
+    %% Módulo: Configuración del Sistema
+    ERP --> Configuracion
+    Configuracion --> Empresa[Datos de la empresa]
+    Configuracion --> Impuestos
+    Configuracion --> Plantillas[Plantillas de documentos]
+    Configuracion --> Integraciones[Integraciones externas]
 ```
 
 ## Módulos Principales
